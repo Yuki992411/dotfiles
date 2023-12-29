@@ -1,0 +1,51 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "explorer.confirmDelete": false,
+  "jest.jestCommandLine": "${HOME}/.volta/bin/pnpm test -- --coverage",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "launch": {
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "name": "vscode-jest-tests.v2",
+        "request": "launch",
+        "args": [
+          "--runInBand",
+          "--watchAll=false",
+          "--testNamePattern",
+          "${jest.testNamePattern}",
+          "--runTestsByPath",
+          "${jest.testFile}"
+        ],
+        "cwd": "${workspaceFolder}",
+        "preLaunchTask": "",
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/jest",
+        "env": {
+          "NODE_ENV": "test"
+        },
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "windows": {
+          "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+        }
+      }
+    ]
+  },
+  "editor.lineNumbers": "relative",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
