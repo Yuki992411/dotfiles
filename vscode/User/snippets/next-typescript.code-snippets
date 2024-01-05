@@ -1,0 +1,73 @@
+{
+  // Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Print to tsDoc": {
+    "scope": "typescript",
+    "prefix": "tsdoc",
+    "body": [
+      "/**",
+      " * ## $1",
+      " *",
+      " * @param $2",
+      " * @param $3",
+      " * @returns $4",
+      " *",
+      " * @throws $5",
+      " *",
+      " * @description",
+      " *",
+      " * @example",
+      " */",
+      "$6"
+    ],
+    "description": "tsDoc"
+  },
+  "Print to Storybook": {
+    "scope": "typescriptreact",
+    "prefix": "story",
+    "body": [
+      "import { Presentation } from './Presentation';",
+      "import type { Meta, StoryObj } from '@storybook/react';",
+      "",
+      "type Story = StoryObj<typeof Presentation>;",
+      "",
+      "export const Default: Story = {",
+      "  args: {",
+      "    $2",
+      "  },",
+      "};",
+      "",
+      "export default {",
+      "  title: '$1,",
+      "  component: Presentation,",
+      "} satisfies Meta<typeof Presentation>;"
+    ],
+    "description": "Storybook"
+  },
+  "Print to Jest Spy": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "spy",
+    "body": [
+      "import * as ${1}Module from '$3';",
+      "",
+      "jest.mock('$3');",
+      "",
+      "const ${2}Mock = jest.spyOn(${1}Module, '$2');"
+    ],
+    "description": "Jest Spy"
+  }
+}
