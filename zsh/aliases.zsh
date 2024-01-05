@@ -8,3 +8,14 @@ alias ks='kubectl'
 alias vimf='vim `fzf`'
 
 alias conv='pnpm i && pnpm test:static && pnpm test -- --runInBand --coverage & pnpm doc'
+
+function chrome {
+	local file=$1
+
+	if [ -f "$file" ]; then
+		open -a "Google Chrome" "$file"
+	else
+		echo -e "\e[33mFile does not exist: $file\e[0m"
+		open -a "Google Chrome"
+	fi
+}
