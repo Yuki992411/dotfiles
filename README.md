@@ -1,7 +1,5 @@
 # Dotfiles
 
-`#M1 Mac` `#zsh` `#vim` `#VS Code`
-
 ## About
 
 This repository contains both shell and VSCode setting files.
