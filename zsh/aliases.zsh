@@ -1,5 +1,5 @@
-alias f='ls -alF'
-alias ll='ls -alF'
+alias ll='ls -alF --color=auto'
+alias f='ll'
 alias doc='cd ~/Documents'
 alias dl='cd ~/Downloads'
 
