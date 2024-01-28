@@ -16,7 +16,9 @@ set incsearch
 set smartindent
 set clipboard+=unnamed
 set wildmenu
+set termguicolors
 colorscheme dracula
+nnoremap <C-"> "_
 
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
