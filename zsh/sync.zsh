@@ -17,6 +17,11 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 
+# completions
+autoload -Uz compinit
+compinit
+source <(docker completion zsh)
+
 # All repositories are in "repos".
 if [ -f ~/repos/run.zsh ]; then
 	source ~/repos/run.zsh
