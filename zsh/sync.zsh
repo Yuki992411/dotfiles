@@ -1,5 +1,9 @@
 export EDITOR='vim'
 
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=100000
+SAVEHIST=1000000
+
 # For coloring dir
 export CLICOLOR=1
 base16_monokai
