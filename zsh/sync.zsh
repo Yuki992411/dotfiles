@@ -4,6 +4,10 @@ export EDITOR='vim'
 export CLICOLOR=1
 base16_monokai
 
+# setup pure
+zstyle :prompt:pure:git:stash show yes
+zstyle :prompt:pure:git:branch color yellow
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
