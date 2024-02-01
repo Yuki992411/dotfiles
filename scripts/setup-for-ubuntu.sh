@@ -27,6 +27,6 @@ curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh |
 
 ./make-ln-s.sh
 
-chsh -s $(which zsh)
+sudo chsh $USER -s $(which zsh)
 
 echo "Setup Done"
