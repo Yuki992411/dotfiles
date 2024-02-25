@@ -4,6 +4,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
@@ -11,6 +12,9 @@
   "jest.jestCommandLine": "${HOME}/.volta/bin/pnpm test -- --coverage",
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "launch": {
     // IntelliSense を使用して利用可能な属性を学べます。
@@ -44,5 +48,5 @@
       }
     ]
   },
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "relative"
 }
