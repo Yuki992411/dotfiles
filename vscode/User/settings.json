@@ -1,5 +1,8 @@
 {
   "workbench.colorTheme": "Default Dark Modern",
+
+  "editor.lineNumbers": "relative",
+
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -47,6 +50,5 @@
         }
       }
     ]
-  },
-  "editor.lineNumbers": "relative"
+  }
 }
