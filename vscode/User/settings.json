@@ -2,6 +2,8 @@
   "workbench.colorTheme": "Dracula Soft",
 
   "editor.lineNumbers": "relative",
+  // vim
+  "vim.surround": true,
 
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
