@@ -44,7 +44,7 @@ brew install sheldon
 (echo; echo 'eval "$(sheldon source)"') >> ~/.zshrc
 ```
 
-### 3. Install vim-jetpack
+### 3. Install vim-jetpack (Optional)
 
 URL: [tani/vim-jetpack](https://github.com/tani/vim-jetpack?tab=readme-ov-file#installation)
 
