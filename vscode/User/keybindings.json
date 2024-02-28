@@ -1,4 +1,4 @@
-// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+// Place your key bindings in this file to override the defaults
 [
   {
     "key": "ctrl+0",
@@ -52,5 +52,17 @@
   {
     "key": "shift+cmd+\\",
     "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "-extension.advancedNewFile"
   }
 ]
