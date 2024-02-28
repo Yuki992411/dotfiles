@@ -21,6 +21,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
 
   "jest.runMode": "on-demand",
   "launch": {
