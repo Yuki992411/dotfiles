@@ -24,7 +24,7 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "f2",
+    "key": "f4",
     "command": "settings.cycle",
     "when": "editorTextFocus",
     "args": {
