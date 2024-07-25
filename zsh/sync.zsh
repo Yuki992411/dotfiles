@@ -14,8 +14,7 @@ zstyle :prompt:pure:git:branch color yellow
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="/usr/local/go/bin:/usr/local/opt/libpq/bin:/usr/local/opt/mysql-client/bin:$PATH"
 
 # completions
 autoload -Uz compinit
