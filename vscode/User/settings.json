@@ -1,7 +1,7 @@
 {
-  "workbench.colorTheme": "Dracula Soft",
+  "workbench.colorTheme": "Dracula Theme",
 
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   // vim
   "vim.surround": true,
 
@@ -14,7 +14,7 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "explorer.confirmDelete": false,
-  "jest.jestCommandLine": "${HOME}/.volta/bin/pnpm test -- --coverage",
+  "jest.jestCommandLine": "${HOME}/.volta/bin/pnpm test:jest",
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
@@ -55,5 +55,6 @@
         }
       }
     ]
-  }
+  },
+  "github.copilot.editor.enableAutoCompletions": true
 }
