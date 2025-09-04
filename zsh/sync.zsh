@@ -12,8 +12,9 @@ base16_monokai
 zstyle :prompt:pure:git:stash show yes
 zstyle :prompt:pure:git:branch color yellow
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH="$HOME/.bun/bin:$PATH"
+export PATH="$HOME/.volta/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 export PATH="/usr/local/go/bin:/usr/local/opt/libpq/bin:/usr/local/opt/mysql-client/bin:$PATH"
 
 # completions
@@ -24,3 +25,9 @@ compinit
 if [ -f ~/repos/run.zsh ]; then
 	source ~/repos/run.zsh
 fi
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# SDKMAN
+[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
