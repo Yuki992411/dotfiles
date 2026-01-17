@@ -64,5 +64,13 @@
   {
     "key": "alt+cmd+n",
     "command": "-extension.advancedNewFile"
-  }
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\\\r\n"
+    },
+    "when": "terminalFocus"
+}
 ]
