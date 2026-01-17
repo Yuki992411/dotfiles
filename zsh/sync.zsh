@@ -15,6 +15,9 @@ zstyle :prompt:pure:git:branch color yellow
 # SDKMAN
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# mise
+eval "$(mise activate zsh)"
+
 # All repositories are in "repos".
 if [ -f ~/repos/run.zsh ]; then
 	source ~/repos/run.zsh
