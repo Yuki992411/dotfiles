@@ -17,17 +17,17 @@ export PATH="$HOME/.volta/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="/usr/local/go/bin:/usr/local/opt/libpq/bin:/usr/local/opt/mysql-client/bin:$PATH"
 
-# completions
+# === Completions ===
 autoload -Uz compinit
 compinit
+
+[[ -s "$HOME/.bun/_bun" ]] && source "$HOME/.bun/_bun"
+# ===================
+
+# SDKMAN
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # All repositories are in "repos".
 if [ -f ~/repos/run.zsh ]; then
 	source ~/repos/run.zsh
 fi
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# SDKMAN
-[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
