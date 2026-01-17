@@ -12,18 +12,6 @@ base16_monokai
 zstyle :prompt:pure:git:stash show yes
 zstyle :prompt:pure:git:branch color yellow
 
-export PATH="$HOME/.bun/bin:$PATH"
-export PATH="$HOME/.volta/bin:$PATH"
-export PATH="$HOME/go/bin:$PATH"
-export PATH="/usr/local/go/bin:/usr/local/opt/libpq/bin:/usr/local/opt/mysql-client/bin:$PATH"
-
-# === Completions ===
-autoload -Uz compinit
-compinit
-
-[[ -s "$HOME/.bun/_bun" ]] && source "$HOME/.bun/_bun"
-# ===================
-
 # SDKMAN
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
