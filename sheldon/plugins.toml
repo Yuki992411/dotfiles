@@ -32,19 +32,20 @@ github = "marlonrichert/zsh-autocomplete"
 github = "zsh-users/zsh-autosuggestions"
 
 [plugins.base16]
-apply = ["source"] # used by zsh/sync.zsh
+apply = ["source"] # used by zsh/sync/init.zsh
 github = "chriskempson/base16-shell"
 
 [plugins.pure]
-apply = ["source"] # used by zsh/sync.zsh
+apply = ["source"] # used by zsh/sync/init.zsh
 github = "sindresorhus/pure"
 use = ["async.zsh", "pure*.zsh"]
 
-[plugins.dotfiles-defer]
-local = "~/dotfiles/zsh"
-use = ["{!sync,*}.zsh"]
-
 [plugins.dotfiles-sync]
 apply = ["source"]
-local = "~/dotfiles/zsh"
-use = ["sync.zsh"]
+local = "~/dotfiles/zsh/sync"
+use = ["*.zsh"]
+
+[plugins.dotfiles-defer]
+apply = ["defer"]
+local = "~/dotfiles/zsh/defer"
+use = ["*.zsh"]
